@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="Quên mật khẩu"
+        android:textStyle="bold"
+        android:textColor="#0099BA"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/edt_pass_quen"
+            android:inputType="textPassword"
+            android:hint="Vui lòng nhập Password mới"
+            android:background="@drawable/shape_bo_edt"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:id="@+id/edt_repass_quen"
+            android:hint="Vui lòng nhập lại Password"
+            android:background="@drawable/shape_bo_edt"
+            />
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Tạo"
+        android:background="@drawable/shape_btn"
+        android:id="@+id/btn_doipass"
+
+        />
+
+
+
+</LinearLayout>

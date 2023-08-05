@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/it_quanlycongviec"
+        android:title="Quản lý công việc"
+        android:icon="@drawable/congviec"
+        />
+    <group android:checkableBehavior="single">
+        <item android:title="Thống kê">
+            <menu>
+                <item android:id="@+id/it_cv_moi"
+                    android:title="Công viêc mới tạo"
+                    android:icon="@drawable/taocv"/>
+                <item android:id="@+id/it_cv_dalam"
+                    android:title="Công viêc đã làm"
+                    android:icon="@drawable/cvhoanthanh"/>
+                <item android:id="@+id/it_cv_chualam"
+                    android:title="Công viêc chưa làm"
+                    android:icon="@drawable/cvchuahoanthanh"/>
+                <item android:id="@+id/it_cv_bixoa"
+                    android:title="Công viêc bị xoa"
+                    android:icon="@drawable/baseline_auto_delete_24"/>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Quản lý tài khoản">
+            <menu>
+                <item android:id="@+id/it_ql_taikhoan"
+                    android:title="Quản lý tài khoản"
+                    android:icon="@drawable/nhansu"/>
+            </menu>
+        </item>
+    </group>
+
+    <item android:id="@+id/it_dangxuat"
+        android:icon="@drawable/dang_xuat"
+        android:title="Đăng xuất"/>
+</menu>
